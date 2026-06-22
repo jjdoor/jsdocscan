@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" font-family="Menlo, 'SF Mono', 'DejaVu Sans Mono', monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="420" fill="url(#bg)"/>
+  <rect width="1000" height="420" fill="none" stroke="#30363d" stroke-width="2"/>
+
+  <!-- subtle grid -->
+  <g stroke="#21262d" stroke-width="1">
+    <line x1="0" y1="105" x2="1000" y2="105"/>
+    <line x1="680" y1="0" x2="680" y2="420"/>
+  </g>
+
+  <!-- watermark -->
+  <text x="60" y="400" fill="#1d2530" font-size="14">zero dependencies · scans JS/TS/JSX/TSX · checks @param coverage</text>
+
+  <!-- terminal circles -->
+  <g>
+    <circle cx="936" cy="34" r="6" fill="#f85149"/>
+    <circle cx="958" cy="34" r="6" fill="#d29922"/>
+    <circle cx="980" cy="34" r="6" fill="#3fb950"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="60" y="118" font-size="64" font-weight="700" letter-spacing="-1">
+    <tspan fill="#79c0ff">jsdoc</tspan><tspan fill="#56d364">scan</tspan>
+  </text>
+  <text x="62" y="156" font-size="21" fill="#8b949e">find what's undocumented before code review does</text>
+
+  <!-- output panel -->
+  <rect x="48" y="178" width="904" height="178" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+
+  <!-- command -->
+  <text x="68" y="208" font-size="15" fill="#6e7681">$ <tspan fill="#8b949e">jsdocscan src/</tspan></text>
+
+  <!-- findings -->
+  <g font-size="15">
+    <text x="68" y="238"><tspan fill="#f85149">✗</tspan> <tspan fill="#6e7681">src/api.js:12</tspan> <tspan fill="#f85149">fetchUser</tspan>  <tspan fill="#f85149">missing JSDoc</tspan></text>
+    <text x="68" y="263"><tspan fill="#f85149">✗</tspan> <tspan fill="#6e7681">src/utils.js:34</tspan> <tspan fill="#f85149">formatDate</tspan>  <tspan fill="#f85149">missing JSDoc</tspan></text>
+    <text x="68" y="288"><tspan fill="#d29922">!</tspan> <tspan fill="#6e7681">src/render.js:7</tspan> <tspan fill="#d29922">renderCard</tspan>  <tspan fill="#d29922">undocumented params: opts</tspan></text>
+    <text x="68" y="313"><tspan fill="#3fb950">✓</tspan> <tspan fill="#6e7681">src/core.js</tspan>  <tspan fill="#6e7681">all clean</tspan></text>
+  </g>
+
+  <!-- summary -->
+  <text x="68" y="339" font-size="15" fill="#f85149">jsdocscan: <tspan fill="#d29922">3/4</tspan><tspan fill="#6e7681"> files with issues — </tspan><tspan fill="#f85149">2 errors</tspan><tspan fill="#6e7681">, </tspan><tspan fill="#d29922">1 warning</tspan></text>
+
+  <!-- install line -->
+  <text x="60" y="376" font-size="17" fill="#58a6ff">$ npx jsdocscan <tspan fill="#6e7681">·</tspan> pip install jsdocscan</text>
+</svg>
