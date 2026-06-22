@@ -1,0 +1,19 @@
+{
+  "name": "jsdocscan",
+  "version": "0.1.0",
+  "description": "Zero-dependency CLI that finds exported functions and classes missing JSDoc (or missing @param tags)",
+  "main": "src/core.js",
+  "bin": {
+    "jsdocscan": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "node --test test/core.test.js"
+  },
+  "keywords": ["jsdoc", "documentation", "lint", "cli", "zero-dependency"],
+  "author": "yyfjj",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jjdoor/jsdocscan"
+  }
+}
